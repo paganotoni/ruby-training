@@ -1,0 +1,14 @@
+%div
+  %form{ :action => "/saveUpdate", :method => "POST" }
+    %em Here you can post an update !
+    %br
+    %label{ :for => "username" } User :
+    %br
+    %input{ :type => "text" , :name => "username" , :id => "username" }
+    %br
+    %label{ :for => "comment" } Comment :
+    %br
+    %input{ :type => "textarea" , :name => "comment" , :id => "comment" }  
+    %br
+    %input{ :type => "submit" , :value => "Submit" }
+

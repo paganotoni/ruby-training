@@ -1,0 +1,9 @@
+%h1
+%form{:action => '/feeling', :method => 'POST'}
+  %legend
+    A simple question
+  %p
+    %label{ :for => "" } how are your feeling today ?
+    %input{ :type => "textbox", :name => "feeling",  :id => "feeling" }
+  %p
+    %input{ :type => "submit" , :value => "Submit" }
