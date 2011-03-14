@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %title Towns List
+  %body
+    %h3 Towns List
+    %br
+    - @towns.each do |town|
+      %div 
+        %em #{town.name}
+        %div #{town.description}
+      %br
